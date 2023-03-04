@@ -20,7 +20,7 @@ require("staline").setup({
 })
 
 require("stabline").setup({
-	style = "bar",
+	style = "arrow",
 -- 	stab_left = "|",
 	bg = "#fe8019",
 	fg = "#ffffff",
