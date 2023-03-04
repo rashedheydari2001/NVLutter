@@ -21,10 +21,10 @@ require("staline").setup({
 
 require("stabline").setup({
 	style = "bar",
-	stab_left = "|",
-	bg = "#242b38",
+-- 	stab_left = "|",
+	bg = "#fe8019",
 	fg = "#ffffff",
-	inactive_bg = "#1e2127",
+	inactive_bg = "#fe8019",
 	inactive_fg = "#ffffff",
 	font_active = "bold",
 	exclude_fts = { "NvimTree", "dashboard", "lir" },
