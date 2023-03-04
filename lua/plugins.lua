@@ -305,6 +305,7 @@ local plugins = {
 		"shaunsingh/nord.nvim",
 		"jayden-chan/base46.nvim",
 		"tanvirtin/monokai.nvim",
+		"ellisonleao/gruvbox.nvim",
 	},
 }
 
