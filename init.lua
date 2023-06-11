@@ -1,0 +1,7 @@
+require('plugins')
+require('theme')
+require('keyboard')
+require('treesitter')
+require('nvim-web-devicon')
+require('core')
+require('stalinetap')
