@@ -13,6 +13,7 @@ bind("n", "<leader>gfc", "<cmd>Telescope git_bcommits<cr>") -- list git commits 
 bind("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git branches (use <cr> to checkout) ["gb" for git branch]
 bind("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
 bind("n", "<leader>ca", "<cmd>CodeActionMenu<cr>") --open up CodeActionMenu
+bind("n", "<C-f>", ":lua vim.lsp.buf.format({ async = true})<cr>", { silent = true })
 bind("n", "<leader>d", "<cmd>TroubleToggle document_diagnostics<cr>")
 bind("n", "<leader>bn", "<cmd>bn<cr>") --next buffer
 bind("n", "<leader>bd", "<cmd>bd<cr>") --buffer delete
