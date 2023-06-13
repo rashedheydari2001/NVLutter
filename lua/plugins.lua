@@ -46,6 +46,8 @@ require('lazy').setup({
     -- refer to the configuration section below
     }
   },
+  --neodev
+  {"folke/neodev.nvim", opts = {}},
   --starline
   {'tamton-aquib/staline.nvim'},
   --themes
