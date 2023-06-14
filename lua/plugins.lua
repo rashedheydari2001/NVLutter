@@ -66,10 +66,6 @@ require('lazy').setup({
     },
   },
   {
-  'weilbith/nvim-code-action-menu',
-  cmd = 'CodeActionMenu',
-  },
-  {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v2.x',
     dependencies = {

@@ -17,9 +17,10 @@ bind("n", "<leader>ff", "<cmd>FlutterRun<cr>")
 bind("n", "<leader>fr", "<cmd>FlutterReload<cr>")
 bind("n", "<leader>fR", "<cmd>FlutterRestart<cr>")
 bind("n", "<leader>fq", "<cmd>FlutterQuit<cr>")
+bind("n", "<leader>fd", "<cmd>FlutterDevices<cr>")
 
 --some optional binding
-bind("n", "<leader>ca", "<cmd>CodeActionMenu<cr>") --open up CodeActionMenu
+bind({"n","v"}, "<leader>ca", vim.lsp.buf.code_action)
 bind("n", "<C-f>", ":lua vim.lsp.buf.format({ async = true})<cr>", { silent = true })
 bind("n", "<leader>e", "<cmd>TroubleToggle document_diagnostics<cr>")
 bind("n", "<leader>bn", "<cmd>bn<cr>") --next buffer
@@ -91,6 +92,9 @@ wk.register({
   },
   c = {
     name = "Lsp",
+    a = {
+      name = "Lsp_Action_menu"
+    }
   },
   p = {
     name = "Files",
