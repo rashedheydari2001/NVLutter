@@ -51,9 +51,10 @@ require('lazy').setup({
   --starline
   {'tamton-aquib/staline.nvim'},
   --themes
+  {'navarasu/onedark.nvim'},
+  {'Mofiqul/dracula.nvim'},
   {'folke/tokyonight.nvim'},
   {'ellisonleao/gruvbox.nvim'},
-  {'sainnhe/gruvbox-material'},
   --nvim-web-devicon
   {'nvim-tree/nvim-web-devicons'},
   --basic flutter plugins
@@ -91,9 +92,6 @@ require('lazy').setup({
   }
 })
 
--- Set colorscheme
-vim.opt.termguicolors = true
-
 -- LSP
 local lsp = require('lsp-zero').preset({})
 
@@ -104,4 +102,3 @@ end)
 require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
 lsp.setup()
-
