@@ -23,8 +23,9 @@ bind("n", "<leader>fd", "<cmd>FlutterDevices<cr>")
 bind({"n","v"}, "<leader>ca", vim.lsp.buf.code_action)
 bind("n", "<C-f>", ":lua vim.lsp.buf.format({ async = true})<cr>", { silent = true })
 bind("n", "<leader>e", "<cmd>TroubleToggle document_diagnostics<cr>")
-bind("n", "<leader>bn", "<cmd>bn<cr>") --next buffer
 bind("n", "<leader>bd", "<cmd>bd<cr>") --buffer delete
+bind("n", "<leader>bn", "<cmd>bn<cr>") --next buffer
+bind("n", "<leader>bp", "<cmd>bp<cr>") --buffer previous
 bind("n", "<leader>h", "<C-w>w<cr>")
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = "menuone,noselect"
@@ -82,7 +83,16 @@ wk.register({
     name = "Document_Diagnostics"
   },
   b = {
-    name = "Buffers"
+    name = "Buffers",
+    d = {
+      name = "Buffer Delete"
+    },
+    n = {
+      name = "Buffer Next"
+    },
+    p = {
+      name = "Buffer previous"
+    }
   },
   g = {
     name = "Git",
