@@ -55,6 +55,8 @@ require('lazy').setup({
   {'Mofiqul/dracula.nvim'},
   {'folke/tokyonight.nvim'},
   {'ellisonleao/gruvbox.nvim'},
+  --tabnin
+  { 'codota/tabnine-nvim', build = "./dl_binaries.sh" },
   --nvim-web-devicon
   {'nvim-tree/nvim-web-devicons'},
   --basic flutter plugins

@@ -20,13 +20,13 @@ bind("n", "<leader>fq", "<cmd>FlutterQuit<cr>")
 bind("n", "<leader>fd", "<cmd>FlutterDevices<cr>")
 
 --some optional binding
-bind({"n","v"}, "<leader>ca", vim.lsp.buf.code_action)
-bind("n", "<C-f>", ":lua vim.lsp.buf.format({ async = true})<cr>", { silent = true })
-bind("n", "<leader>e", "<cmd>TroubleToggle document_diagnostics<cr>")
+bind({"n","v"}, "<leader>ca", vim.lsp.buf.code_action) --lsp code action
+bind("n", "<leader>cf", ":lua vim.lsp.buf.format({ async = true})<cr>", { silent = true }) --autoformating
+bind("n", "<leader>e", "<cmd>TroubleToggle document_diagnostics<cr>") --show list of diagnostics
 bind("n", "<leader>bd", "<cmd>bd<cr>") --buffer delete
 bind("n", "<leader>bn", "<cmd>bn<cr>") --next buffer
 bind("n", "<leader>bp", "<cmd>bp<cr>") --buffer previous
-bind("n", "<leader>h", "<C-w>w<cr>")
+bind("n", "<leader>h", "<C-w>w<cr>") --swaping
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = "menuone,noselect"
 
@@ -104,6 +104,9 @@ wk.register({
     name = "Lsp",
     a = {
       name = "Lsp_Action_menu"
+    },
+    f = {
+      name = 'AutoFormating'
     }
   },
   p = {
