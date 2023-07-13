@@ -18,6 +18,10 @@ bind("n", "<leader>fr", "<cmd>FlutterReload<cr>")
 bind("n", "<leader>fR", "<cmd>FlutterRestart<cr>")
 bind("n", "<leader>fq", "<cmd>FlutterQuit<cr>")
 bind("n", "<leader>fd", "<cmd>FlutterDevices<cr>")
+bind("n", "<leader>fpg", "<cmd>FlutterPubGet<cr>")
+bind("n", "<leader>fpu", "<cmd>FlutterPubUpgrade<cr>")
+bind("n", "<leader>flr", "<cmd>FlutterLspRestart<cr>")
+bind("n", "<leader>flc", "<cmd>FlutterLogClear<cr>")
 
 --some optional binding
 bind({"n","v"}, "<leader>ca", vim.lsp.buf.code_action) --lsp code action
@@ -67,6 +71,12 @@ local wk = require("which-key")
 wk.register({
   f = {
     name = "Flutter",
+    p = {
+      name = 'Pub'
+    },
+    l = {
+      name = 'Lsp'
+    }
   },
   t = {
     name = "Telescope"
