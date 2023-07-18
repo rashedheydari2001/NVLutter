@@ -84,15 +84,6 @@ wk.register({
 	e = {
 		name = "Document_Diagnostics"
 	},
-	d = {
-		name = "Buffer Delete"
-	},
-	n = {
-		name = "Buffer Next"
-	},
-	b = {
-		name = "Buffer previous"
-	},
 	g = {
 		name = "Git",
 		f = {
